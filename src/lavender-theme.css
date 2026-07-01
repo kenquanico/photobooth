@@ -1,0 +1,12 @@
+:root{color:#292532;background:#fbfaff;--pink:#9277df;--deep:#674caf;--pale:#eee8ff;--line:#ddd6ef;--ink:#292532}
+html{scroll-behavior:smooth;background:#fbfaff}body{background:linear-gradient(180deg,#fcfbff 0,#f8f5ff 100%);color:var(--ink)}
+.announcement{background:#e9e1fb;color:#65577e}.blob.one{background:#e8ddfa}.blob.two{background:#d7c7f1}.doodle-heart,.doodle,.studio-title>svg{color:#8768d3}
+.how,.room-status,.pair-status,.post-preview{background:#f0ebfb}.how article,.pair-options section{background:#fdfcff;border-color:#e5def3}.customizer,.result-stage{background:#f3effc;border-color:#e2d9f3}
+.layout-card:hover,.layout-card.selected{border-color:#dcd2ef;box-shadow:0 12px 35px #5d47801a}.card-number{color:#ddd2f1}.preview-photo{background-image:radial-gradient(circle at 50% 30%,#f5f0ff 0 18%,transparent 19%),linear-gradient(135deg,#ded5ef,#aa96cc)}
+.custom-studio{border-color:#ddd4ef;box-shadow:0 24px 70px #4f357215}.studio-preview{background:linear-gradient(145deg,#f7f3ff,#e7def8)}.studio-preview>.layout-preview{box-shadow:0 18px 45px #4f357238}
+.swatch-grid button.active,.pattern-grid button.active,.shape-grid button.active,.sticker-grid button.active,.effect-grid button.active,.font-grid button.active,.zone-grid button.active,.decoration-tabs button.active,.post-layouts button.active,.pair-layout-grid>button.active{border-color:#9277df;box-shadow:0 0 0 3px #e5dcf8}
+.shape-grid button,.sticker-grid button,.effect-grid button.active,.font-grid button.active,.zone-grid button.active,fieldset.decoration-editor,.filters button.active{background:#f4f0fc}.shape-grid b{color:#8d70d4}
+.fine-tune input[type=range],.placement-sliders input,.edit-panel input[type=range]{accent-color:#9277df}.pair-layout-grid>button>svg,.capture-progress>span{color:#674caf}.capture-progress i.current{background:#ad98e7}.room-code{color:#5c429e}
+.paired-result{background:#f0ebfb!important}.danger{background:#674caf}.error{background:#5b3d82}.primary{box-shadow:0 6px 16px #2925322c}
+button,.layout-card,.pair-layout-grid>button,.pattern-grid button{transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease,background-color .18s ease}button:active{transform:scale(.98)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}button,.layout-card,.pair-layout-grid>button,.pattern-grid button{transition:none}}
