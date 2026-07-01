@@ -1,0 +1,53 @@
+/* Phone-first interaction refinements kept separate from the visual system. */
+button, a, input { -webkit-tap-highlight-color: transparent; }
+.layout-rail { overscroll-behavior-inline: contain; -webkit-overflow-scrolling: touch; }
+.layout-card { touch-action: pan-x; }
+
+@media (max-width: 520px) {
+  body { overflow-x: hidden; }
+  .announcement { padding-top: max(9px, env(safe-area-inset-top)); height: auto; min-height: 34px; }
+  header { padding-inline: 20px; }
+  .menu, .camera-controls button, .count-options button { min-width: 44px; min-height: 44px; }
+  nav.open { gap: 6px; padding: 10px; }
+  nav.open button, nav.open a { width: 100%; min-height: 46px; display: grid; place-items: center; border-radius: 10px; }
+  nav.open button.active { background: #fff1f4; }
+
+  .hero { min-height: auto; padding-top: 58px; }
+  .hero h1 { font-size: clamp(44px, 13vw, 54px); }
+  .hero-copy > p { font-size: 16px; }
+  .hero-actions button { min-height: 52px; }
+  .privacy { align-items: flex-start; line-height: 1.5; }
+
+  .gallery-page { padding-bottom: 55px; }
+  .gallery-wrap { margin-top: 38px; margin-bottom: 45px; }
+  .layout-rail { gap: 14px; padding-inline: calc((100vw - 250px) / 2); }
+  .layout-card { flex-basis: 250px; min-height: 430px; }
+  .customizer { padding: 22px 18px; gap: 18px; }
+  .customizer label { min-width: 0; }
+  .customizer input[type="range"] { width: 100%; min-height: 34px; }
+  .customizer .caption-label { flex-basis: 100%; }
+  .customizer .caption-label input { width: 100%; min-height: 46px; font-size: 16px; }
+
+  .booth-page { margin-top: 28px; padding: 0 14px calc(22px + env(safe-area-inset-bottom)); }
+  .booth-top { font-size: 13px; }
+  .camera-shell { width: 100%; min-height: 0; height: min(68svh, 620px); aspect-ratio: auto; }
+  .camera-controls { bottom: max(16px, env(safe-area-inset-bottom)); gap: 14px; padding: 8px 14px; }
+  .count-options { flex-wrap: wrap; }
+  .capture-tray { flex-wrap: wrap; }
+
+  .editor-page { margin-top: 38px; padding-inline: 14px; }
+  .result-stage { border-radius: 18px; }
+  .thumb-row button { min-width: 58px; min-height: 70px; }
+  .filters { display: grid; grid-template-columns: repeat(2, 1fr); }
+  .filters button, .export button { min-height: 44px; }
+  .export { display: grid; grid-template-columns: repeat(2, 1fr); }
+
+  .pair-page { padding-inline: 14px; }
+  .pair-options section { padding: 32px 20px; }
+  .pair-options button, .pair-options input, .danger { min-height: 48px; }
+  .paired-video figure { aspect-ratio: 3 / 4; }
+  footer { padding-bottom: calc(50px + env(safe-area-inset-bottom)); }
+}
+
+.paired-countdown{position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:clamp(48px,12vw,90px);background:#211c1e55;text-shadow:0 4px 20px #000}
+.paired-capture{margin:22px auto 5px}.paired-result{max-width:520px;margin:26px auto;padding:24px;background:#fff1f4;border-radius:24px}.paired-result h2{margin-top:0}.paired-result img{display:block;max-width:230px;max-height:460px;margin:16px auto;box-shadow:0 15px 35px #7c425426}

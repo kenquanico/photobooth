@@ -1,0 +1,1 @@
+{"name":"petal-booth-signaling","private":true,"type":"module","scripts":{"start":"node server.js"},"dependencies":{"ws":"latest"}}
