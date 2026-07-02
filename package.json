@@ -11,6 +11,7 @@
     "signal": "npm --prefix signaling-server start"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "@vercel/functions": "latest",
     "@vitejs/plugin-react": "latest",
     "lucide-react": "latest",
