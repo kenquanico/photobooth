@@ -18,6 +18,7 @@
     "qrcode": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "trystero": "^0.25.2",
     "vite": "latest",
     "ws": "latest"
   },
