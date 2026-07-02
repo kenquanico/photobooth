@@ -13,5 +13,6 @@ import './capture-flow.css';
 import './paired-flow.css';
 import './paired-fixes.css';
 import './lavender-theme.css';
+import './ux-fixes.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(<React.StrictMode><App /></React.StrictMode>);
