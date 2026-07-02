@@ -21,5 +21,5 @@ export function App(){
  {page==='layouts'&&<LayoutGallery selected={layout} onSelect={setLayout} settings={settings} setSettings={setSettings} onContinue={()=>go('camera')}/>} 
  {page==='camera'&&<CameraBooth layout={layout} settings={settings} onExit={()=>go('layouts')} onDone={captured=>{setPhotos(captured);go('editor')}}/>}
  <Suspense fallback={<Loading/>}>{page==='editor'&&<PhotoEditor layout={layout} photos={photos} settings={settings} onRetake={()=>go('camera')} onSettings={setSettings}/>} {page==='pair'&&<PairDevice/>}</Suspense>
- <footer><button className="brand" onClick={()=>go('home')} aria-label="Petal Booth home"><img src="/pb-icon.svg" alt=""/></button><p>Made for moments worth keeping.</p><small>© {new Date().getFullYear()} Petal Booth · Photos never leave your browser.</small></footer></div>;
+ <footer><button className="brand" onClick={()=>go('home')} aria-label="Petal Booth home"><img src="/pb2-logo.png" alt=""/></button><p>Made for moments worth keeping.</p><small>© {new Date().getFullYear()} Petal Booth · Photos never leave your browser.</small></footer></div>;
 }
