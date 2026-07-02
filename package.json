@@ -23,6 +23,7 @@
     "ws": "latest"
   },
   "devDependencies": {
+    "@types/node": "^26.1.0",
     "@types/qrcode": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
