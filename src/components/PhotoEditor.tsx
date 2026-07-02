@@ -7,7 +7,7 @@ import {CustomizationPanel} from './CustomizationPanel';
 const blank=():CropState=>({zoom:1,x:0,y:0,brightness:100,contrast:100,filter:'none'});
 
 export function PhotoEditor({layout,photos,settings,onRetake,onSettings}:{layout:BoothLayout;photos:string[];settings:BoothSettings;onRetake:()=>void;onSettings:(settings:BoothSettings)=>void}){
- const crops=useMemo(()=>Array.from({length:layout.poses},blank),[layout.poses]);
+ const crops=useMemo(()=>Array.from({length:layout.poses},()=>({...blank(),filter:settings.photoFilter||'none'})),[layout.poses,settings.photoFilter]);
  const working=useMemo(()=>Array.from({length:layout.poses},(_,index)=>photos[index%photos.length]),[photos,layout.poses]);
  const [preview,setPreview]=useState('');
  useEffect(()=>{let live=true;compose(layout,working,settings,crops).then(canvas=>live&&setPreview(canvas.toDataURL('image/jpeg',.9)));return()=>{live=false}},[layout,working,settings,crops]);
