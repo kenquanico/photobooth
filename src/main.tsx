@@ -11,6 +11,7 @@ import './materials.css';
 import './effects-editor.css';
 import './post-designer.css';
 import './capture-flow.css';
+import './camera-lenses.css';
 import './paired-flow.css';
 import './paired-fixes.css';
 import './lavender-theme.css';
